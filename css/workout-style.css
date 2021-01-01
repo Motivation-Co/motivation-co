@@ -97,4 +97,47 @@ body {
     text-align: center;
 }
 
+#form1{
+    width: 95%;
+    height: 90%;
+    background-color: dimgray;
+    margin-left: 2.5%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+}
+
+.submitButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 18px;
+    color: rgba(255,255,255,.70);
+}
+
+.animated-p {
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 24px;
+    color: rgba(255,255,255,.70);
+  }
+  
+/* Animation */
+.animated-p {
+    animation: animated-text 2s steps(30,end) 0.5s 1 normal both;
+  }
+  
+/* text animation */
+  
+@keyframes animated-text{
+from{width: 0;}
+to{width: 1000px;}
+}
+
 /* MAIN CONTENT ENDS */
