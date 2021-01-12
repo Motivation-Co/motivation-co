@@ -109,8 +109,9 @@ body {
     background-color: #1b1b1b;
 }
 
+/* SECTION PADDING */
 main section {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 main h1 {
@@ -139,6 +140,10 @@ main h3 {
 
 main img {
     max-width: 100%;
+    padding: 1rem 0 0 0;
+}
+
+.bottom-quote {
     padding: 1rem 0 0 0;
 }
 

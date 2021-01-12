@@ -1,4 +1,3 @@
-/*About-style CSS file*/
 /* GLOBAL STYLES BEGIN */
 
 *,
@@ -71,7 +70,7 @@ nav a:hover { /* When hovering over navigation links */
     color: crimson;
     border-radius: 5px;
     box-shadow:  0 0 5px crimson;
-              
+                 0 0 10px #66ffff;
 }
 
 .current-page {
@@ -79,7 +78,7 @@ nav a:hover { /* When hovering over navigation links */
     color: crimson;
     border-radius: 5px;
     box-shadow:  0 0 5px crimson;
-                  
+                 0 0 10px #66ffff;    
 }
 
 /* NAVIGATION BAR ENDS */
@@ -96,6 +95,51 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.main {
+    margin-top: 6rem;
+    display: flex;
+    padding: 2em;
+    /* flex: 1; */
+}
+
+.about-content {
+    width: 50%;
+    margin-right: 1em;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    background-color: slategray;
+}
+
+.about-list {
+    font-size: 2em;
+    list-style-type: none;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-text {
+    white-space: wrap;
+}
+
+.about-text-footer {
+    font-size: 1.2rem;
+}
+
+.about-text-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-text-footer a:hover {
+    color: crimson;
+}
+
+.main img {
+    width: 100%;
 }
 
 /* MAIN CONTENT ENDS */
