@@ -1,35 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/workout-style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <title>Workout - Motivation Co.</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/workout-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lato"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Poppins"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Raleway"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
 
-<body>
-    <!--NAVIGATION BAR BEGINS-->
-    <header>
-        <div class="nav-bar">
-            <div class="left-nav-bar">
-                <a href="../index.html" style="text-decoration: none;"><h2>Motivation Co.</h2></a>
-                <img src="../imgs/gearicon.png" width="25" height="25" alt="gear icon">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="workout.html" class="current-page">Workout</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!--NAVIGATION BAR ENDS-->
-</body>
+		<title>Workout - Motivation Co.</title>
+	</head>
 
+	<body>
+		<!--NAVIGATION BAR BEGINS-->
+		<header>
+			<div class="nav-bar">
+				<div class="left-nav-bar">
+					<a href="../index.html" style="text-decoration: none"
+						><h2>Motivation Co.</h2></a
+					>
+					<img
+						src="../imgs/gearicon.png"
+						width="25"
+						height="25"
+						alt="gear icon"
+					/>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li>
+							<a href="workout.html" class="current-page"
+								>Workout</a
+							>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--NAVIGATION BAR ENDS-->
+
+		<div class="main-container">
+			<main>
+				<div id="form1">
+					<form>
+						<h4 style="color: rgba(255, 255, 255, 0.7)">
+							What's Your Name:
+						</h4>
+						<div class="row">
+							<div class="col">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="First name"
+									id="fname"
+								/>
+							</div>
+							<div class="col">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Last name"
+									id="lname"
+								/>
+							</div>
+						</div>
+					</form>
+
+					<button
+						id="enterNameButton"
+						class="btn btn-primary submitButton"
+					>
+						Confirm
+					</button>
+
+					<p
+						class="animated-p"
+						id="welcomeMessage"
+						style="display: none"
+					>
+						Hey
+					</p>
+
+					<p
+						class="animated-p"
+						id="welcomeMessage2"
+						style="display: none"
+					>
+						Let's Get Started...
+					</p>
+
+					<p class="animated-p" id="message3" style="display: none">
+						Do you want to build muscle or lose weight?
+					</p>
+
+					<div id="buildmusOrLoseWeight" style="display: none">
+						<div
+							class="
+								custom-control
+								custom-radio
+								custom-control-inline
+							"
+						>
+							<input
+								type="radio"
+								id="buildM"
+								name="Radio1"
+								class="custom-control-input"
+							/>
+							<label class="custom-control-label" for="buildM"
+								><p>Build Muscle</p></label
+							>
+						</div>
+						<div
+							class="
+								custom-control
+								custom-radio
+								custom-control-inline
+							"
+						>
+							<input
+								type="radio"
+								id="loseW"
+								name="Radio1"
+								class="custom-control-input"
+							/>
+							<label class="custom-control-label" for="loseW"
+								><p>Lose Weight</p></label
+							>
+						</div>
+					</div>
+
+					<button
+						style="display: none"
+						id="cont1"
+						class="btn btn-primary submitButton"
+					>
+						Continue
+					</button>
+
+					<p class="animated-p" id="message4" style="display: none">
+						Great, let's
+					</p>
+
+					<form style="display: none">
+						<p>Do You Have Access To a Gym?</p>
+						<input
+							type="radio"
+							id="yestogym"
+							name="accessToGym"
+							value="Yes"
+						/>
+						<label for="yestogym">Yes</label><br />
+						<input
+							type="radio"
+							id="notogym"
+							name="accessToGym"
+							value="No"
+						/>
+						<label for="notogym">No</label><br />
+					</form>
+				</div>
+			</main>
+		</div>
+
+		<script>
+			var firstName = ""
+			var lastName = ""
+			document.body.style.backgroundColor = "#606060"
+			document.getElementById("enterNameButton").onclick = function () {
+				document.getElementById("enterNameButton").disabled = true
+
+				var firstName = document.getElementById("fname").value
+				var lastName = document.getElementById("lname").value
+
+				document.getElementById("welcomeMessage").innerHTML =
+					document.getElementById("welcomeMessage").innerHTML +
+					firstName +
+					"!"
+				document.getElementById("welcomeMessage").style.display =
+					"block"
+
+				setTimeout(function () {
+					document.getElementById("welcomeMessage2").style.display =
+						"block"
+				}, 1500)
+
+				setTimeout(function () {
+					document.getElementById("message3").style.display = "block"
+				}, 3000)
+
+				setTimeout(function () {
+					document.getElementById(
+						"buildmusOrLoseWeight"
+					).style.display = "block"
+					document.getElementById("cont1").style.display = "block"
+				}, 5500)
+			}
+
+			document.getElementById("cont1").onclick = function () {
+				document.getElementById("cont1").disabled = true
+
+				var radioVals = document.getElementsByName("Radio1")
+
+				if (radioVals[0].checked) {
+					document.getElementById("message4").innerHTML =
+						document.getElementById("message4").innerHTML +
+						"get you jacked!"
+					document.getElementById("message4").style.display = "block"
+				} else {
+					document.getElementById("message4").innerHTML =
+						document.getElementById("message4").innerHTML +
+						"get you shredded!"
+					document.getElementById("message4").style.display = "block"
+				}
+			}
+
+			// var plan = querySelector('input[name="Radio1"]:checked').value;
+
+			// if (plan == buildM){
+
+			// }
+			// else{
+
+			// }
+		</script>
+	</body>
 </html>

@@ -97,6 +97,51 @@ body {
     text-align: center;
 }
 
-/* MAIN CONTENT ENDS */
+#form1{
+    width: 95%;
+    height: 90%;
+    background-color: #3d3d3d;
+    margin-left: 2.5%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
 
-/* TODO: COLOR VARIABLES, MOTIVATIONAL QUOTE TO API WITH JSON */
+}
+
+.submitButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 18px;
+    color: rgba(255,255,255,.70);
+}
+
+.animated-p {
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 24px;
+    color: rgba(255,255,255,.70);
+  }
+
+main {
+    background-color: #606060;
+}
+
+/* Animation */
+.animated-p {
+    animation: animated-text 2s steps(30,end) 0.5s 1 normal both;
+  }
+  
+/* Text Animation */
+  
+@keyframes animated-text{
+from{width: 0;}
+to{width: 1000px;}
+}
+
+/* MAIN CONTENT ENDS */
