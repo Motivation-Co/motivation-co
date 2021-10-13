@@ -8,7 +8,6 @@ Our attempt to make a fully functional website as a group by the end of Winter B
 
 - Learn about responsive web design through HTML, CSS, and Javascript.
 - Create content and applications relating to a motivational theme, such as:
-  - Blog
   - Workout system
 - Format readable code for team collaboration.
 
@@ -16,6 +15,6 @@ Our attempt to make a fully functional website as a group by the end of Winter B
 
 <a
     href="https://github.com/motivation-co/motivation-co/graphs/contributors">
-  <img
+<img
     src="https://contrib.rocks/image?repo=motivation-co/motivation-co" />
 </a>

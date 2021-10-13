@@ -105,7 +105,7 @@ body {
 }
 
 .about-content {
-    width: 50%;
+    width: 75%;
     margin-right: 1em;
     text-align: center;
     font-family: Lato, sans-serif;
@@ -118,7 +118,7 @@ body {
 }
 
 .about-image {
-    width: 50%;
+    width: 25%;
 }
 
 .about-text {
