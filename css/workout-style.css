@@ -24,7 +24,7 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: #1b1b1b;
-    padding: 0px 20px;
+    padding: 5px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,6 +51,7 @@ nav ul {
     list-style-type: none;
     font-family: "Poppins", sans-serif;
     font-size: large;
+    margin-top: 15px;
 }
 
 nav li {
