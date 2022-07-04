@@ -1,8 +1,8 @@
 # [Motivation Co.](https://motivation-co.github.io/motivation-co/index.html)
 
-Our attempt to make a fully functional website as a group by the end of Winter Break. The main theme of the website is Motivation, and the website will have multiple applications related to the theme.
+Our attempt to make a fully functional website as a group by the end of Winter Break. The main theme of the website is Motivation, and the website has an aim for applications related to the theme.
 
-[Website hosted through GitHub Pages](https://motivation-co.github.io/motivation-co/index.html)
+[Website hosted through GitHub Pages](https://motivation-co.github.io/motivation-co/index.html).
 
 ## Learning Goals
 
